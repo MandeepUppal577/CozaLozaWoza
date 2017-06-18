@@ -30,7 +30,7 @@ namespace CozaLozaWoza
                 {
                     Console.Write(i);
                 }
-                else if (i % 11 == 0)
+                if (i % 11 == 0)
                 {
                     Console.WriteLine();
                 }
