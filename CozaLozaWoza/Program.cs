@@ -10,7 +10,7 @@ namespace CozaLozaWoza
     {
         static void Main(string[] args)
         {
-            int start = 1, int end = 110;
+            int start = 1,  end = 110;
 
             for (int i = start; i <= end; ++i)
             {
@@ -26,8 +26,19 @@ namespace CozaLozaWoza
                 {
                     Console.Write("Woza");
                 }
-
-            }
+                else if (i % 3 != 0 || i % 5 != 0 || i != 7)
+                {
+                    Console.Write(i);
+                }
+                else if (i % 11 == 0)
+                {
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.Write(" ");
+                }
+            }Console.ReadKey();
         }
     }
 }
